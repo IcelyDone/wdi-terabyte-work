@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+h1 {
+  width: 960px;
+  padding: 40px 0;
+}
+
+h1 a {
+  color: #7189FF;
+  text-decoration: none;
+}
+
+.title {
+  display: flex;
+}
+
+.beachside {
+  right: -203px;
+  position: relative;
+  animation-name: beachside-animate;
+  animation-duration: 3s;
+}
+
+@keyframes beachside-animate {
+  0% { right: 173px; }
+  100% { right: -203px; }
+}
+
+.yoga {
+  left: -340px;
+  top: 0;
+  position: relative;
+  animation-name: yoga-animate;
+  animation-duration: 3s;
+}
+
+@keyframes yoga-animate {
+  0% { top: -122px; }
+  100% { top: 0;  }
+}
+
+.page-wrapper {
+  background: white;
+  width: 960px;
+  margin: 0 auto;
+}
+
+.header-nav {
+  display: flex;
+  background-color: #C1CEFE;
+  justify-content: space-evenly;
+  padding: 10px 0;
+  font-weight: bold;
+}
+
+.header-nav a {
+  color: #624CAB;
+  text-decoration: none;
+}
+
+.main {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.blog-posts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-post {
+  width: 24%;
+  text-align: center;
+}
+
+.blog-post img {
+  width: 100%;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+ .community-members {
+   display: flex;
+   flex-wrap: wrap;
+   background-color: white;
+   animation-name: community-members-animate;
+   animation-duration: 5s;
+   animation-delay: 3s;
+   animation-iteration-count: 3;
+}
+
+@keyframes community-members-animate {
+   0% {background-color: white;}
+   20% {background-color: #f245e4;}
+   40% {background-color: #f74a79;}
+   60% {background-color: #f37b30;}
+   80% {background-color: #ffab05;}
+   100% {background-color: #ed73bf;}
+}
+
+.community-member {
+  width: 20%;
+  text-align: center;
+}
+
+.community-member img {
+  width: 100%;
+}
+
+.community-member-name {
+  margin: 5px 0 10px;
+}
+
+footer {
+  margin-top: 120px;
+}
+
+footer .address {
+  width: 960px;
+  margin: 0 auto;
+  text-align: right;
+}
+
+footer img {
+  width: 100%;
+}
+
+footer .image-wrapper {
+  display: block;
+}
