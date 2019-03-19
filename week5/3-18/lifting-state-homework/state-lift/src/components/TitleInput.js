@@ -1,8 +1,8 @@
 import React from 'react'
 
-const TitleInput = () => {
+const TitleInput = props => {
     return(
-        <input type='text' placeholder='Update Title Here!' />
+        <input type='text' placeholder='Update Title Here!' onChange={props.updateTitle} />
     )
 }
 
